@@ -1,0 +1,386 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2faf2;
+  color: #2c2c2c;
+}
+.navbar {
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d6a2d;     /
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #c8f0a0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 4px;
+  transition: background 0.3s; /
+}
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #c8f0a0;
+  color: #2d6a2d;
+}
+
+.page-header {
+  background-image: url('photos/nyandungu-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #2d6a2d; /* fallback colour */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.page-header h1 {
+  font-size: 46px;
+  color: #c8f0a0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.page-header p {
+  font-size: 18px;
+  opacity: 0.9;
+  font-style: italic;
+}
+.intro {
+  display: flex;       
+  gap: 40px;
+  padding: 50px 60px;
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1; /
+}
+
+.intro-text h2 {
+  font-size: 28px;
+  color: #2d6a2d;
+  margin-bottom: 15px;
+  border-left: 5px solid #c8f0a0;
+  padding-left: 14px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 14px;
+  color: #444;
+}
+
+.intro-image {
+  flex: 1;
+}
+
+/
+.intro-image img {
+  width: 100%;
+  border-radius: 14px;
+  border: 4px solid #2d6a2d;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  /* fallback colour shown while image loads */
+  background-color: #c8dcc8;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.activities {
+  background-color: #e4f4e4;
+  padding: 50px 60px;
+}
+
+.activities h2 {
+  font-size: 28px;
+  color: #2d6a2d;
+  margin-bottom: 20px;
+}
+
+.activity-list {
+  padding-left: 20px; 
+}
+
+.activity-list li {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #aaa;
+  line-height: 1.7;
+  color: #333;
+}
+
+.activity-list li strong {
+  color: #2d6a2d;
+}
+.gallery {
+  padding: 50px 40px;
+  background-color: #fff;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  color: #2d6a2d;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;      
+  border-radius: 10px;
+  border: 3px solid #c8dcc8;
+  background-color: #c8dcc8; 
+  transition: transform 0.3s, border-color 0.3s; /
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04); 
+  border-color: #2d6a2d;
+}
+
+.wildlife {
+  background-color: #e4f4e4;
+  padding: 50px 60px;
+}
+
+.wildlife h2 {
+  font-size: 26px;
+  color: #2d6a2d;
+  margin-bottom: 20px;
+}
+
+.wildlife-list {
+  list-style: none;
+  padding: 0;
+}
+
+.wildlife-list li {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #c8dcc8;
+  line-height: 1.6;
+}
+
+.table-section {
+  padding: 50px 60px;
+  background-color: #f2faf2;
+}
+
+.table-section h2 {
+  font-size: 26px;
+  color: #2d6a2d;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 700px;
+}
+
+th, td {
+  padding: 13px 18px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #2d6a2d;
+  color: white;
+  width: 180px;
+}
+
+tr:nth-child(even) {
+  background-color: #e4f4e4;
+}
+
+
+.video-section {
+  background-color: #1a3d1a;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 26px;
+  color: #c8f0a0;
+  margin-bottom: 10px;
+}
+
+.video-section p {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.video-section video {
+  border-radius: 10px;
+  border: 3px solid #c8f0a0;
+  max-width: 100%;
+  /* green box shown while video file loads */
+  background-color: #2d6a2d;
+  min-height: 200px;
+}
+
+
+.audio-section {
+  padding: 40px 60px;
+  background-color: #e4f4e4;
+  text-align: center;
+}
+
+.audio-section h2 {
+  font-size: 24px;
+  color: #2d6a2d;
+  margin-bottom: 10px;
+}
+
+.audio-section p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.audio-section audio {
+  width: 400px;
+  max-width: 100%;
+}
+
+.map-section {
+  padding: 50px 40px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.map-section h2 {
+  font-size: 26px;
+  color: #2d6a2d;
+  margin-bottom: 20px;
+}
+
+.map-section iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.form-section {
+  background-color: #2d6a2d;
+  color: white;
+  padding: 50px 60px;
+}
+
+.form-section h2 {
+  font-size: 26px;
+  color: #c8f0a0;
+  margin-bottom: 8px;
+}
+
+.form-section p {
+  margin-bottom: 25px;
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  gap: 10px;
+}
+
+.form-section label {
+  font-size: 14px;
+  color: #c8f0a0;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #f2faf2;
+  color: #2c2c2c;
+}
+
+.form-section button {
+  padding: 12px;
+  background-color: #c8f0a0;
+  color: #2d6a2d;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #a0d070;
+}
+.back-link {
+  padding: 20px 60px;
+  background-color: #f2faf2;
+}
+
+.back-link a {
+  color: #2d6a2d;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #c8f0a0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
