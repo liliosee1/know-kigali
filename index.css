@@ -10,6 +10,10 @@ body {
   background-color: #f9f5ef;
   color: #2c2c2c;
 }
+video{
+  border-radius: 40px;
+  width: 100%;
+}
 
 
 .navbar {
@@ -81,7 +85,6 @@ body {
   margin-bottom: 20px;
   line-height: 1.6;
 }
-
 .btn {
   background-color: #f5c842;
   color: #1a472a;
