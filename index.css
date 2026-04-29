@@ -185,6 +185,21 @@ video{
 .card a {
   margin: 10px 15px 15px;
 }
+.card a{
+  text-decoration: none;
+  color: #000200;
+}
+.btn-small{
+  background-color: #100341d8;
+  padding:8px 20px:
+
+
+
+}
+.btn-small:hover {
+  background-color: #2f13a0;
+}
+
 
 .info-table {
   padding: 50px 60px;
@@ -237,8 +252,13 @@ tr:nth-child(even) {
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-external-link {
+.external-link a {
 
+  text-decoration: none;
+  color: #120368;
+  font-weight: bold;
+  margin-top: 40px;
+}
 
 footer{
 background:#000803e5;
@@ -328,8 +348,6 @@ overflow-x:auto;
 width:100%;
 height:350px;
 }
-<!for small pphn screen
-
 }@media screen and (max-width:480px){
 
 .navbar{
