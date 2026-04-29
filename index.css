@@ -5,13 +5,19 @@
   box-sizing: border-box;
 }
 
+html,body{
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+}
+
 body {
   font-family: Georgia, serif;
-  background-color: #fcfaf7;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000200;
 }
 video{
-  border-radius: 40px;
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -19,7 +25,7 @@ video{
   display: flex;                  
   justify-content: space-between; 
   align-items: center;
-  background-color: #1a472a;      
+  background-color: #554b8d9f;      
   padding: 15px 40px;
   position: sticky;               
   top: 0;
@@ -40,7 +46,7 @@ video{
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(10, 0, 0);
   text-decoration: none;
   font-size: 15px;
   padding: 6px 10px;
@@ -51,7 +57,7 @@ video{
 
 .nav-links a:hover,
 .nav-links a.active {
-  background-color: #f5c842;
+  background-color: #929ae4;
   color: #1a472a;
 }
 
@@ -72,6 +78,11 @@ video{
   border-radius: 10px;
   max-width: 550px;
 }
+.hero-image {
+  margin-top: 3%;
+
+}
+}
 
 .hero-text h1 {
   font-size: 42px;
@@ -84,36 +95,6 @@ video{
   margin-bottom: 20px;
   line-height: 1.6;
 }
-.btn {
-  background-color: #f5c842;
-  color: #1a472a;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #d4a800;
-}
-
-.btn-small {
-  display: inline-block;
-  background-color: #1a472a;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-size: 14px;
-  transition: background 0.3s;
-}
-
-.btn-small:hover {
-  background-color: #f5c842;
-  color: #1a472a;
-}
 
 .about {
   padding: 50px 60px;
@@ -123,7 +104,7 @@ video{
 
 .about h2 {
   font-size: 30px;
-  color: #1a472a;
+  color:black;
   margin-bottom: 15px;
 }
 
@@ -136,7 +117,7 @@ video{
 .about h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #333;
+  color:black;
 }
 
 .reasons-list {
@@ -158,7 +139,7 @@ video{
 .destinations h2 {
   text-align: center;
   font-size: 30px;
-  color: #1a472a;
+  color: #02000f;
   margin-bottom: 30px;
 }
 
@@ -191,7 +172,7 @@ video{
 .card h3 {
   padding: 12px 15px 5px;
   font-size: 18px;
-  color: #1a472a;
+  color: #000f05;
 }
 
 .card p {
@@ -213,7 +194,7 @@ video{
 
 .info-table h2 {
   font-size: 28px;
-  color: #1a472a;
+  color: #010007;
   margin-bottom: 20px;
 }
 
@@ -230,7 +211,7 @@ th, td {
 }
 
 th {
-  background-color: #1a472a;
+  background-color:#554b8d9f;
   color: white;
 }
 
@@ -239,53 +220,6 @@ tr:nth-child(even) {
 }
 
 
-.newsletter {
-  background-color: #1a472a;
-  color: white;
-  padding: 50px;
-  text-align: center;
-}
-
-.newsletter h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #f5c842;
-}
-
-.newsletter p {
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-.newsletter form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;     
-}
-
-.newsletter input {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  width: 220px;
-}
-
-.newsletter button {
-  padding: 10px 24px;
-  background-color: #f5c842;
-  color: #1a472a;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.newsletter button:hover {
-  background-color: #d4a800;
-}
 
 .map-section {
   padding: 50px 40px;
@@ -294,7 +228,7 @@ tr:nth-child(even) {
 
 .map-section h2 {
   font-size: 28px;
-  color: #1a472a;
+  color: #000803;
   margin-bottom: 20px;
 }
 
@@ -303,20 +237,155 @@ tr:nth-child(even) {
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-footer {
-  background-color: #111;
-  color: #ccc;
-  text-align: center;
-  padding: 25px;
-  font-size: 14px;
-  line-height: 2;
+external-link {
+
+
+footer{
+background:#000803e5;
+color:white;
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+@media screen and (max-width:1024px){
+
+.navbar{
+padding:15px 25px;
 }
 
-footer a {
-  color: #f5c842;
-  text-decoration: none;
+.nav-links{
+gap:15px;
+flex-wrap:wrap;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.hero{
+padding:30px;
+height:auto;
+flex-direction:column;
+}
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+.about,
+.destinations,
+.info-table,
+.map-section{
+padding:40px 30px;
+}
+
+.map-section iframe{
+width:100%;
+}
+}
+@media screen and (max-width:768px){
+
+.navbar{
+flex-direction:column;
+padding:20px;
+}
+
+.nav-links{
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+text-align:center;
+}
+
+.hero{
+flex-direction:column;
+height:auto;
+padding:30px 20px;
+}
+
+.hero-text{
+max-width:100%;
+padding:20px;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+.cards{
+grid-template-columns:1fr 1fr;
+}
+
+.about,
+.destinations,
+.info-table,
+.map-section{
+padding:35px 20px;
+}
+
+table{
+display:block;
+overflow-x:auto;
+}
+
+.map-section iframe{
+width:100%;
+height:350px;
+}
+<!for small pphn screen
+
+}@media screen and (max-width:480px){
+
+.navbar{
+padding:15px;
+}
+
+.logo{
+font-size:18px;
+text-align:center;
+}
+
+.hero{
+padding:20px 15px;
+}
+
+.hero-text h1{
+font-size:26px;
+}
+
+.hero-text p{
+font-size:14px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:auto;
+}
+
+.about,
+.destinations,
+.info-table,
+.map-section{
+padding:25px 15px;
+}
+
+.about h2,
+.destinations h2,
+.info-table h2,
+.map-section h2{
+font-size:22px;
+}
+
+th,td{
+font-size:13px;
+padding:8px;
+}
+
+.map-section iframe{
+height:280px;
+}
+
+footer{
+font-size:12px;
+padding:12px;
+}
 }

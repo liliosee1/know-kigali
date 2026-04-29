@@ -4,7 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html,body{
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+}
 body {
   font-family: Arial, sans-serif;
   color: #2c2c2c;
@@ -14,15 +18,14 @@ body {
   display: flex;                 
   justify-content: space-between;
   align-items: center;
-  background-color: #69388d;     /
+  background-color: #100524;     /
   padding: 15px 40px;
   position: sticky;
-  top: 0;
   z-index: 100;
 }
 
 .logo {
-  color: #100524;
+  color: #f1edf7;
   font-size: 22px;
   font-weight: bold;
 }
@@ -42,7 +45,7 @@ body {
 }
 .nav-links a:hover,
 .nav-links a.active {
-  background-color: #c8f0a0;
+  background-color: #406ac5;
   color: #100524;
 }
 
@@ -50,7 +53,7 @@ body {
   background-image: url('photos/nyandungu-header.jpg');
   background-size: cover;
   background-position: center;
-  background-color: #100524; /* fallback colour */
+  background-color: #100524; 
   color: #c69ce7;
   text-align: center;
   padding: 80px 20px;
@@ -58,7 +61,7 @@ body {
 
 .page-header h1 {
   font-size: 46px;
-  color: #340558;
+  color: #ffffffec;
   margin-bottom: 10px;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
@@ -104,7 +107,6 @@ body {
   border-radius: 14px;
   border: 4px solid #100524;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  /* fallback colour shown while image loads */
   background-color: black;
   min-height: 250px;
   object-fit: cover;
@@ -113,6 +115,7 @@ body {
 .activities {
   background-color: #c69ce7;
   padding: 50px 60px;
+  border-radius: 4%;
 }
 
 .activities h2 {
@@ -170,8 +173,9 @@ body {
 }
 
 .wildlife {
-  background-color: #e4f4e4;
+  background-color:#c69ce7;
   padding: 50px 60px;
+  border-radius: 4%;
 }
 
 .wildlife h2 {
@@ -199,7 +203,7 @@ body {
 
 .table-section h2 {
   font-size: 26px;
-  color:  #c69ce7;
+  color:  #11051a;
   margin-bottom: 20px;
 }
 
@@ -240,6 +244,7 @@ tr:nth-child(even) {
 .map-section iframe {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  width: 100%;
 }
 
 .form-section {
@@ -250,7 +255,7 @@ tr:nth-child(even) {
 
 .form-section h2 {
   font-size: 26px;
-  color: #c8f0a0;
+  color: #f0f8f2;
   margin-bottom: 8px;
 }
 
@@ -269,7 +274,7 @@ tr:nth-child(even) {
 
 .form-section label {
   font-size: 14px;
-  color: #c8f0a0;
+  color: #f0f8f2;
 }
 
 .form-section input,
@@ -297,4 +302,142 @@ tr:nth-child(even) {
 
 .form-section button:hover {
   background-color: #07030a;
+}
+footer{
+background:#000e05;
+color:white;
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+@media screen and (max-width:1024px){
+
+.navbar{
+padding:15px 25px;
+}
+
+.nav-links{
+gap:15px;
+flex-wrap:wrap;
+}
+
+.intro{
+padding:40px 30px;
+gap:30px;
+}
+
+.gallery-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.activities,
+.wildlife,
+.table-section{
+padding:40px 30px;
+}
+
+.map-section iframe{
+width:100%;
+height:400px;
+}
+}
+@media screen and (max-width:768px){
+
+.navbar{
+flex-direction:column;
+padding:20px;
+}
+
+.nav-links{
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+}
+
+.page-header h1{
+font-size:34px;
+}
+
+.intro{
+flex-direction:column;
+padding:35px 20px;
+}
+
+.gallery-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.activities,
+.wildlife,
+.table-section,
+.map-section{
+padding:30px 20px;
+}
+
+table{
+display:block;
+overflow-x:auto;
+}
+
+.map-section iframe{
+height:350px;
+}
+}
+@media screen and (max-width:480px){
+
+.navbar{
+padding:15px;
+}
+
+.logo{
+font-size:18px;
+text-align:center;
+}
+
+.page-header{
+padding:55px 15px;
+}
+
+.page-header h1{
+font-size:28px;
+}
+
+.page-header p{
+font-size:14px;
+}
+
+.intro,
+.activities,
+.wildlife,
+.table-section,
+.map-section{
+padding:25px 15px;
+}
+
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+.gallery-grid img{
+height:auto;
+}
+
+.activity-list li,
+.wildlife-list li{
+font-size:14px;
+}
+
+th,td{
+font-size:13px;
+padding:8px;
+}
+
+.map-section iframe{
+height:280px;
+}
+
+footer{
+font-size:12px;
+padding:12px;
+}
 }
