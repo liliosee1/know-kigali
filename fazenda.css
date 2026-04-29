@@ -130,6 +130,7 @@ body {
 
 .activity-list {
   padding-left: 20px;
+  align-items: center;
 }
 
 .activity-list li {
@@ -334,37 +335,4 @@ tr:nth-child(even) {
 
 .form-section button:hover {
   background-color: #e0b840;
-}
-
-.back-link {
-  padding: 20px 60px;
-  background-color: #fdf6ec;
-}
-
-.back-link a {
-  color: #7b4a1e;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.back-link a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-footer a {
-  color: #f9d488;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
